@@ -1,3 +1,3 @@
 ### Preview 
 
-![Preview ](assets/preview.png)
+![Preview ](/preview.png)
