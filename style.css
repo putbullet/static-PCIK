@@ -1,0 +1,97 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  background-image: url('./assets/images/blu.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+}
+
+p{
+  color: white; /* Text color */
+}
+h2{
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.6rem;
+  color: rgb(16, 66, 93);
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.dream {
+  color: rgb(26, 72, 124);
+  overflow: hidden; /* Hide the overflowing text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-right: .09em solid black; /* Create a blinking cursor effect */
+  animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
+
